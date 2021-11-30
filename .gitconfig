@@ -1,0 +1,8 @@
+[alias]
+	st = status
+	co = checkout
+	cm = commit -m
+	ca = commit --amend --no-edit
+[user]
+	email = chris@ditschers.de
+	name = Christian Ditscher
