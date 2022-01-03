@@ -21,6 +21,7 @@
     added = green
     changed = yellow
     untracked = cyan
+
 [push]
     default = current
 [pull]
@@ -108,7 +109,6 @@
     path = C:/Program Files/Beyond Compare 4/BCompare.exe
 [difftool "bc3"]
     path = C:/Program Files/Beyond Compare 4/BCompare.exe
-
 
 [core]
     preloadindex = true
