@@ -1,11 +1,5 @@
-export http_proxy=http://localhost:3128
-export https_proxy=http://localhost:3128
-export ftp_proxy=:http://localhost:3128
-export no_proxy=localhost,127.0.0.1,*.microsoftonline.com,*.bosch.com
-export DOCKER_USER=$(whoami) && export DOCKER_UID=$(id -u) && export DOCKER_GID=$(id -g)
-export CONTAINER_USER=$(whoami) && export CONTAINER_UID=$(id -u) && export CONTAINER_GID=$(id -g)
-export ARTIFACTORY_API_KEY=AKCp8ihf8XjZaVFcgLYzTpzaCNnXbRh9DNXWLFgjcpEGxNAorNjemDBbY1pGfn7qi4qqtdXgA
-
+# Load customisation for work @ bosch 
+[[ ! -f ~/.bosch.zsh ]] || source ~/.bosch.zsh
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -64,6 +58,3 @@ source $ZSH/themes/powerlevel10k/powerlevel10k.zsh-theme
 export EDITOR='nano'
 alias zshconfig="nano ~/.zshrc"
 alias python='python3'
-alias sde='docker-compose build --pull dev-env && docker-compose run --rm -v ${HOME}/.ssh:${HOME}/.ssh:ro -v ${HOME}/.gitconfig:${HOME}/.gitconfig dev-env'
-
-eval $(thefuck --alias)
