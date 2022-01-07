@@ -4,5 +4,5 @@
 	cm = commit -m
 	ca = commit --amend --no-edit
 [user]
-	email = chris@ditschers.de
+	email = chris@ditscher.me
 	name = Christian Ditscher
