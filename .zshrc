@@ -18,6 +18,9 @@ if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
         print -P "%F{33} %F{34}Installation successful.%f%b" || \
         print -P "%F{160} The clone has failed.%f%b"
+    print ""
+    print -P "%F{220}${bold}Please ensure the default packages are installed:%f${normal}"
+    print -P "%F{33}  sudo apt install autojump fonts-powerline fonts-firacode%f"
 fi
 
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
@@ -37,4 +40,7 @@ zinit light-mode for \
 
 # load customisation
 export ZSH=~/.zsh
+# Requirements:
+#  sudo apt install zsh git wget autojump fzf fonts-powerline fonts-firacode
+
 source $ZSH/config/00_LOADER.zsh
