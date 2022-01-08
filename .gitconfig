@@ -1,6 +1,17 @@
 [user]
 	email = chris@ditscher.me
 	name = Christian Ditscher
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+[merge]
+    tool = meld
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+
 [alias]
 	cm = commit -m
 	co = checkout
