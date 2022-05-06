@@ -89,6 +89,7 @@
     # conflict/merges
     ours = "!f() { git co --ours $@ && git add $@; }; f"
     theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+	adda-mirror-update = "!f() { git fetch origin --prune --tags && git push --prune adda +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*; }; f"
 [merge]
     tool = meld
     #ff = false
@@ -145,3 +146,7 @@
 [lfs]
     defaulttokenttl = true
     contenttype = false
+[credential]
+	helper = store
+[safe]
+	directory = /opt/osd/ansible/osd-ansible-custom
