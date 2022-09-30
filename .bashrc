@@ -118,4 +118,4 @@ fi
 
 echo ""
 echo -e "\033[0;33m\e[1mPlease ensure the required packages are installed to use zsh ;)\033[0m\e[21m"
-echo -e "\033[0;32m\e[1m  sudo apt install zsh git wget autojump fonts-powerline fonts-firacode\033[0m\e[21m"
+echo -e "\033[0;32m\e[1m  sudo apt install zsh git wget autojump fzf fonts-powerline fonts-firacode\033[0m\e[21m"
