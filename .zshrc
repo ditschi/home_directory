@@ -27,7 +27,7 @@ if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
         print -P "%F{160} The clone has failed.%f%b"
     print ""
     print -P "%F{220}${bold}Please ensure the default packages are installed:%f${normal}"
-    print -P "%F{33}  sudo apt install autojump fonts-powerline fonts-firacode%f"
+    print -P "%F{33}  sudo apt install autojump fzf fonts-powerline fonts-firacode%f"
 fi
 
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
